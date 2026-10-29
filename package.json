@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-foursquare",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Foursquare Places MCP — migrated to the 2025 Places API",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-foursquare": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "foursquare"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-foursquare.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/foursquare",
   "pipeworx": {
-    "sourceHash": "v1-93e4e3b4d055bc5f7dcc0f74a564ad7fd7b8a7ae5b54ec21bd478832efb09015",
-    "sourceCommit": "445bacc5596a845c12d6945fbfcdf330ef60dcc4"
+    "mode": "gateway",
+    "slug": "foursquare",
+    "gatewaySlug": "foursquare",
+    "sourceHash": "v1-6531c0abe3579018a95710bcf44180491d84151b61d8c12640013ecb62d6afa3",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }
