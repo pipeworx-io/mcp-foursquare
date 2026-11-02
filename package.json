@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-foursquare",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Foursquare Places MCP — migrated to the 2025 Places API",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "foursquare",
     "gatewaySlug": "foursquare",
-    "sourceHash": "v1-6531c0abe3579018a95710bcf44180491d84151b61d8c12640013ecb62d6afa3",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceHash": "v1-3aae6a44d7f31566583a2ae2a18d9cc4e4a70149fadafa9fb92d2e41d30b1db9",
+    "sourceCommit": "030233f6b150a38a44421f88a5fcbad123f0fea8"
   }
 }
